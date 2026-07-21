@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Mountclare Cottages | Luxury Islamic Girls-Only Student Accommodation Cape Town</title>
+  <meta name="description" content="Opening November 2026 at 2 Mountclare, Sybrand Park. Premium, Islamic-focused, girls-only student residence for UCT students. Fully furnished luxury units, all meals included, 24/7 security, daily UCT transport. Managed by Lotus Parker Real Estate.">
+  <meta name="keywords" content="Mountclare Cottages, UCT student accommodation, Muslim girls student housing, luxury student residence Cape Town, Sybrand Park student accommodation, Lotus Parker Real Estate">
+  <meta name="author" content="Lotus Parker Real Estate">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mountclare Cottages | Luxury Islamic Girls Student Residence">
+  <meta property="og:description" content="Opening November 2026 in Sybrand Park, Cape Town. Faith-conscious, secure, boutique living for young Muslim women studying at UCT.">
+  <meta property="og:image" content="assets/exterior.jpg">
+
+  <!-- Leaflet CSS for Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  
+  <!-- FontAwesome 6 for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+  <header class="navbar" id="topNav">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-wrapper">
+        <img src="assets/logo.png" alt="Lotus Parker Real Estate Logo" class="brand-logo-img">
+        <div class="brand-divider"></div>
+        <span class="brand-wordmark">Mountclare Cottages</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#accommodation" class="nav-link">Accommodation</a></li>
+        <li><a href="#amenities" class="nav-link">Amenities</a></li>
+        <li><a href="#location" class="nav-link">Location</a></li>
+        <li><a href="#gallery" class="nav-link">Property Showcase</a></li>
+        <li><a href="#contact" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.8rem;">Register Interest</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/exterior.jpg" alt="Mountclare Cottages Residence Exterior at 2 Mountclare Sybrand Park">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star" style="font-size: 0.75rem;"></i>
+        <span>Opening November 2026</span>
+      </div>
+      
+      <h1 class="hero-title">Mountclare Cottages</h1>
+      <p class="hero-tagline">Luxury Student Living, Rooted in Faith and Comfort</p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          <span>Register Your Interest</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#accommodation" class="btn btn-outline">
+          <span>View Residence Options</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll To Discover</span>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT SECTION
+       ========================================== -->
+  <section class="about section-padding bg-motif" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-image-wrapper reveal-fade-up">
+          <img src="assets/exterior.jpg" alt="Mountclare Cottages Front View" class="about-img">
+          <div class="about-badge-overlay">
+            <div class="badge-number">Nov 2026</div>
+            <div class="badge-text">Welcoming First Intake</div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-fade-up">
+          <span class="arch-header-accent">A Sanctuary For Success</span>
+          <h2 class="section-title">Faith-Conscious Modest Luxury For Young Muslim Women</h2>
+          
+          <p class="about-text-p">
+            Situated at 2 Mountclare in the peaceful enclave of Sybrand Park, Cape Town, <strong>Mountclare Cottages</strong> is a newly built, boutique student residence crafted specifically for female UCT students who desire an uncompromised standard of living.
+          </p>
+          <p class="about-text-p">
+            We provide a warm, secure, and faith-inspired environment where academic focus thrives alongside personal peace of mind. Every detail—from our fully furnished suites to our full meal plan and daily private transport—has been thoughtfully curated for discerning parents and ambitious students.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fas fa-mosque"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>Islamic-Focused</h4>
+                <p>Modest & supportive female-only environment</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>24/7 Protection</h4>
+                <p>Security guard & alarm systems on duty</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px; display: flex; align-items: center; gap: 15px;">
+            <img src="assets/logo.png" alt="Lotus Parker Real Estate" style="height: 36px; opacity: 0.9;">
+            <span style="font-size: 0.88rem; color: var(--text-muted); font-weight: 500;">
+              Developed & Managed by <strong>Lotus Parker Real Estate</strong>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ACCOMMODATION OPTIONS SECTION
+       ========================================== -->
+  <section class="accommodation section-padding" id="accommodation">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <span class="arch-header-accent">Living Spaces</span>
+        <h2 class="section-title">Tailored Residence Units</h2>
+        <p class="section-subtitle">
+          Designed with generous natural light, acoustic privacy, and premium finishes. Each unit is fully furnished and includes dedicated parking per bedroom.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        
+        <!-- Option 1: Two-Bed Unit -->
+        <div class="unit-card reveal-fade-up">
+          <div class="unit-card-motif-header">
+            <div class="motif-icon-circle">
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="unit-type-tag">2 Units Available</span>
+          </div>
+          <div class="unit-card-body">
+            <h3 class="unit-title">Two-Bed / Two-Bath Suite</h3>
+            <div class="unit-specs">
+              <i class="fas fa-bed"></i> 2 Bedrooms &bull; <i class="fas fa-bath"></i> 2 Bathrooms &bull; Kitchen & Living Area
+            </div>
+            <p class="unit-description">
+              Features two private bedrooms, two full bathrooms, a fully fitted kitchen, and a comfortable, sunlit living area. Perfect for privacy and companionship.
+            </p>
+            <ul class="unit-features-list">
+              <li><i class="fas fa-check-circle"></i> Fully Furnished Bedrooms & Lounge</li>
+              <li><i class="fas fa-check-circle"></i> Private En-Suite / Dedicated Bathrooms</li>
+              <li><i class="fas fa-check-circle"></i> Kitchen & Living Area</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated Parking Per Bedroom</li>
+            </ul>
+            <div class="unit-card-footer">
+              <a href="#contact" class="btn btn-dark" style="width: 100%;">Inquire For Booking</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 2: Larger Two-Bed Unit -->
+        <div class="unit-card reveal-fade-up">
+          <div class="unit-card-motif-header">
+            <div class="motif-icon-circle">
+              <i class="fas fa-couch"></i>
+            </div>
+            <span class="unit-type-tag">2 Units Available</span>
+          </div>
+          <div class="unit-card-body">
+            <h3 class="unit-title">Larger Two-Bed Unit</h3>
+            <div class="unit-specs">
+              <i class="fas fa-bed"></i> 2 Bedrooms &bull; <i class="fas fa-bath"></i> 1 Bathroom &bull; Living Area
+            </div>
+            <p class="unit-description">
+              Spacious open-plan layout featuring an expansive living lounge area, high ceilings, shared full bathroom, and custom study desks.
+            </p>
+            <ul class="unit-features-list">
+              <li><i class="fas fa-check-circle"></i> Fully Furnished Luxury Interiors</li>
+              <li><i class="fas fa-check-circle"></i> Spacious Shared Living Room</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated Study Nooks</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated Parking Per Bedroom</li>
+            </ul>
+            <div class="unit-card-footer">
+              <a href="#contact" class="btn btn-dark" style="width: 100%;">Inquire For Booking</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 3: Executive House -->
+        <div class="unit-card reveal-fade-up">
+          <div class="unit-card-motif-header">
+            <div class="motif-icon-circle">
+              <i class="fas fa-building"></i>
+            </div>
+            <span class="unit-type-tag">1 Exclusive House</span>
+          </div>
+          <div class="unit-card-body">
+            <h3 class="unit-title">Executive 3-Bed House</h3>
+            <div class="unit-specs">
+              <i class="fas fa-bed"></i> 3 Bedrooms &bull; <i class="fas fa-bath"></i> 3 Bathrooms &bull; Kitchen & Lounge
+            </div>
+            <p class="unit-description">
+              An exclusive standalone residence unit featuring 2 en-suite bedrooms + 1 additional bedroom, separate bathroom, spacious living area & kitchen.
+            </p>
+            <ul class="unit-features-list">
+              <li><i class="fas fa-check-circle"></i> 2 En-Suite Bedrooms + 1 Additional Bedroom</li>
+              <li><i class="fas fa-check-circle"></i> Separate Bathroom & Spacious Living Area</li>
+              <li><i class="fas fa-check-circle"></i> Fully Fitted Kitchen</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated Parking Per Bedroom</li>
+            </ul>
+            <div class="unit-card-footer">
+              <a href="#contact" class="btn btn-dark" style="width: 100%;">Inquire For Booking</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       AMENITIES & SERVICES SECTION
+       ========================================== -->
+  <section class="amenities section-padding" id="amenities">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <span class="arch-header-accent">All-Inclusive Convenience</span>
+        <h2 class="section-title">Signature Services & Amenities</h2>
+        <p class="section-subtitle">
+          We handle daily logistics so students can focus entirely on academic achievements and personal growth.
+        </p>
+      </div>
+
+      <div class="amenities-grid">
+        
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3 class="amenity-title">All Meals Included</h3>
+          <p class="amenity-desc">Nutritious, freshly prepared meals served daily to keep students energized.</p>
+        </div>
+
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-bus"></i>
+          </div>
+          <h3 class="amenity-title">Daily UCT Transport</h3>
+          <p class="amenity-desc">Private daily shuttle service straight to UCT campus and return trips.</p>
+        </div>
+
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-tshirt"></i>
+          </div>
+          <h3 class="amenity-title">Laundry Service</h3>
+          <p class="amenity-desc">Regular professional laundry and garment care services provided on-site.</p>
+        </div>
+
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3 class="amenity-title">24/7 Security Guard</h3>
+          <p class="amenity-desc">Round-the-clock physical security guard stationed at the property for complete safety.</p>
+        </div>
+
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-bell"></i>
+          </div>
+          <h3 class="amenity-title">Fully Fitted Alarm</h3>
+          <p class="amenity-desc">State-of-the-art security alarm monitoring system with rapid response connectivity.</p>
+        </div>
+
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <h3 class="amenity-title">Close Proximity to Shops</h3>
+          <p class="amenity-desc">Minutes away from grocery stores, retail centers, pharmacies, and cafes.</p>
+        </div>
+
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3 class="amenity-title">Private Parking Per Bedroom</h3>
+          <p class="amenity-desc">Dedicated, secure off-street parking spot assigned per bedroom.</p>
+        </div>
+
+        <div class="amenity-card reveal-fade-up">
+          <div class="amenity-icon-wrapper">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <h3 class="amenity-title">High-Speed Fiber</h3>
+          <p class="amenity-desc">Uncapped high-speed Wi-Fi throughout all units and communal spaces.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LOCATION SECTION
+       ========================================== -->
+  <section class="location section-padding" id="location">
+    <div class="container">
+      <div class="location-grid">
+        
+        <div class="location-info reveal-fade-up">
+          <span class="arch-header-accent">Prime Cape Town Setting</span>
+          <h2 class="section-title">Sybrand Park Convenience</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem;">
+            Mountclare Cottages is ideally positioned at <strong>2 Mountclare, Sybrand Park</strong> — offering an idyllic suburban retreat with seamless access to UCT campuses and vibrant commercial hubs.
+          </p>
+
+          <ul class="location-highlights-list">
+            <li class="location-item">
+              <div class="location-icon-badge">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="location-item-content">
+                <h4>UCT Campus Commute</h4>
+                <p>Direct 7-10 minute commute via our dedicated daily shuttle.</p>
+              </div>
+            </li>
+
+            <li class="location-item">
+              <div class="location-icon-badge">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="location-item-content">
+                <h4>Local Shopping & Conveniences</h4>
+                <p>Close to Kromboom Shopping Centre, Woolworths, & local pharmacies.</p>
+              </div>
+            </li>
+
+            <li class="location-item">
+              <div class="location-icon-badge">
+                <i class="fas fa-mosque"></i>
+              </div>
+              <div class="location-item-content">
+                <h4>Community & Places of Worship</h4>
+                <p>Walking distance to local masjids and community prayer facilities.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal-fade-up">
+          <div id="sybrandMap" class="map-container"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROPERTY SHOWCASE / GALLERY SECTION
+       ========================================== -->
+  <section class="gallery section-padding bg-motif" id="gallery">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <span class="arch-header-accent">Authentic Property Feature</span>
+        <h2 class="section-title">2 Mountclare Residence Exterior</h2>
+        <p class="section-subtitle">
+          Newly constructed, high-security boutique student living in Sybrand Park, Cape Town.
+        </p>
+      </div>
+
+      <div class="showcase-single-wrapper reveal-fade-up">
+        <div class="showcase-img-frame arch-frame">
+          <img src="assets/exterior.jpg" alt="Mountclare Cottages Exterior Property View at 2 Mountclare Sybrand Park" class="showcase-img" id="showcasePrimaryImg">
+          <div class="showcase-badge">
+            <i class="fas fa-check-circle"></i> Official Property View
+          </div>
+        </div>
+
+        <div class="showcase-details-card">
+          <div class="showcase-stat">
+            <span class="stat-number">Nov 2026</span>
+            <span class="stat-label">Opening Date</span>
+          </div>
+          <div class="showcase-stat">
+            <span class="stat-number">Girls Only</span>
+            <span class="stat-label">Islamic Environment</span>
+          </div>
+          <div class="showcase-stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Guard & Alarm</span>
+          </div>
+          <div class="showcase-stat">
+            <span class="stat-number">Lotus Parker</span>
+            <span class="stat-label">Development & Mgmt</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT / REGISTER INTEREST SECTION
+       ========================================== -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <div class="contact-info-panel reveal-fade-up">
+          <span class="arch-header-accent" style="color: var(--primary-gold);">Secure Your Placement</span>
+          <h3>Register Your Interest</h3>
+          <p>
+            With opening scheduled for <strong>November 2026</strong>, intake allocations are strictly limited to maintain an intimate, high-quality living community. Contact Lotus Parker Real Estate today to receive early priority updates.
+          </p>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Direct Telephone</h5>
+              <span>081 393 2008</span>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Official Inquiries</h5>
+              <span>azparker0304@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Residence Location</h5>
+              <span>2 Mountclare, Sybrand Park, Cape Town</span>
+            </div>
+          </div>
+
+          <div class="opening-notice">
+            <i class="fas fa-info-circle" style="margin-right: 8px;"></i>
+            Note: Residence opens November 2026. Spaces are reserved on a first-come, intake-verified basis.
+          </div>
+        </div>
+
+        <div class="reveal-fade-up">
+          <form class="register-form" id="registerInterestForm">
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: #FFF; margin-bottom: 24px;">Placement Application</h3>
+            
+            <div class="form-group">
+              <label for="formName" class="form-label">Full Name</label>
+              <input type="text" id="formName" class="form-input" placeholder="e.g. Fatima Parker" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail" class="form-label">Email Address</label>
+              <input type="email" id="formEmail" class="form-input" placeholder="e.g. fatima@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formPhone" class="form-label">Contact Phone Number</label>
+              <input type="tel" id="formPhone" class="form-input" placeholder="e.g. 081 123 4567" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formUnit" class="form-label">Preferred Unit Type</label>
+              <select id="formUnit" class="form-select">
+                <option value="Two-Bed Two-Bath">Two-Bed / Two-Bath Unit</option>
+                <option value="Larger Two-Bed One-Bath">Larger Two-Bed Unit</option>
+                <option value="Executive 3-Bed House">Executive 3-Bed House</option>
+                <option value="Undecided / General Inquiry">Undecided / General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">Message / Special Requests</label>
+              <textarea id="formMessage" class="form-textarea" rows="4" placeholder="Tell us about your study plans for 2027 or any questions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+              <span>Submit Registration</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <h4>Mountclare Cottages</h4>
+          <p style="font-size: 0.92rem; line-height: 1.6; max-width: 380px;">
+            A values-led, faith-conscious luxury student accommodation providing young Muslim women studying at UCT with exceptional security, peace of mind, and modern boutique comfort.
+          </p>
+
+          <div class="footer-developer-tag">
+            <img src="assets/logo.png" alt="Lotus Parker Real Estate" class="footer-logo-img">
+            <span>Developed & Managed by Lotus Parker Real Estate</span>
+          </div>
+        </div>
+
+        <div class="footer-links-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Residence</a></li>
+            <li><a href="#accommodation">Room Options</a></li>
+            <li><a href="#amenities">Services & Amenities</a></li>
+            <li><a href="#location">Sybrand Park Location</a></li>
+            <li><a href="#contact">Register Interest</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-column">
+          <h5>Direct Contact</h5>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-map-marker-alt text-gold"></i> 2 Mountclare, Sybrand Park</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-phone text-gold"></i> Phone: 081 393 2008</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-envelope text-gold"></i> Email: azparker0305@gmail.com</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mountclare Cottages. Developed & Managed by Lotus Parker Real Estate. All rights reserved.</p>
+        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.4);">Opening November 2026 &bull; Sybrand Park, Cape Town</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODALS (LIGHTBOX & TOAST)
+       ========================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img src="" alt="Enlarged View" class="lightbox-content" id="lightboxImg">
+  </div>
+
+  <div class="toast-backdrop" id="toastBackdrop"></div>
+  <div class="toast-modal" id="toastModal">
+    <div class="toast-icon">
+      <i class="fas fa-check"></i>
+    </div>
+    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 8px; color: var(--text-main);">Registration Received</h3>
+    <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 24px;">
+      Thank you for registering your interest in <strong>Mountclare Cottages</strong>. The Lotus Parker Real Estate team will be in touch with you shortly.
+    </p>
+    <button class="btn btn-primary" id="toastCloseBtn" style="width: 100%;">Done</button>
+  </div>
+
+  <!-- Leaflet JS for Map -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
